@@ -1,0 +1,391 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\David\Desktop\InstancedSkinnin DX11\Instanced_Skinning (AssetsDB DX11) help.v4p" systemname="Instanced_Skinning (AssetsDB DX11) help" filename="C:\Users\David\Desktop\InstancedSkinnin DX11\Instanced_Skinning (AssetsDB DX11) help.v4p" bgcolor="12124086" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2025" top="1260" width="10470" height="7305">
+   </BOUNDS>
+   <NODE systemname="Kalle (VVVV)" nodename="Kalle (VVVV)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="15" top="15" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Background Kalle" slicecount="1" values="|0.71301,1.00000,0.72271,0.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="3615" top="5220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1" slicecount="1" values="586">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1" slicecount="1" values="371">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Instanced_Skinning (AssetsDB DX11)" filename="Instanced_Skinning (AssetsDB DX11).v4p" nodename="Instanced_Skinning (AssetsDB DX11)" componentmode="Hidden" id="196">
+   <BOUNDS type="Node" left="836" top="2644" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="690" width="11865" height="8740">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15675" top="4665" width="11970" height="11460">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Collada File" slicecount="1" values="HammerheadDrone.DAE">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="War_machine.dae">
+   </PIN>
+   <PIN pinname="LightDirection " slicecount="3" visible="1" values="-0.357065349817276,-0.933486044406891,0.0332890562713146">
+   </PIN>
+   <PIN pinname="Position" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Rotation" slicecount="4" visible="1" values="0,0,0.46000000834465,1">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Read" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="XYZ Transformed" visible="1">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Instance Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Instanced Transform" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="TextureFileName" visible="1">
+   </PIN>
+   <PIN pinname="Animation Collada/VVVV" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="213" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3885" top="1275" width="1545" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3885" top="1275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="samba_dancing_1_corr_bBone.dae">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="213" srcpinname="Output Enum" dstnodeid="196" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="220" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1125" top="315" width="915" height="315">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1125" top="315" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="Assets">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Asset Directory|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="220" srcpinname="Output String" dstnodeid="196" dstpinname="Asset Directory">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" nodename="Renderer (DX11)" componentmode="InAWindow" id="1" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="1680" top="5220" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1680" top="5220" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14325" top="390" width="9675" height="7230">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format">
+   </PIN>
+   <PIN pinname="Background Color" slicecount="1" values="|0.44160,0.44160,0.44160,1.00000|">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level">
+   </PIN>
+   <PIN pinname="Is Fullscreen" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Clear Depth" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Clear" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Transform Out" dstnodeid="1" dstpinname="Aspect Ratio">
+   </LINK>
+   <NODE systemname="Group (DX11.Layer)" nodename="Group (DX11.Layer)" componentmode="Hidden" id="2" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
+   <BOUNDS type="Node" left="1560" top="4215" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Template Count">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="118" systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden">
+   <PIN pinname="Initial Interest" slicecount="3" values="0,0,0">
+   </PIN>
+   <BOUNDS type="Node" left="2775" top="4605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="510" top="1980" width="15420" height="8730">
+   </BOUNDS>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.9">
+   </PIN>
+   <PIN pinname="Speed">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="1" values="1000">
+   </PIN>
+   <PIN pinname="Inital Distance" slicecount="1" values="4.5">
+   </PIN>
+   <PIN pinname="Initial Yaw" slicecount="1" values="-0.53">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Projection" dstnodeid="1" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="View" dstnodeid="1" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="View" dstnodeid="196" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="Projection" dstnodeid="196" dstpinname="Projection">
+   </LINK>
+   <NODE systemname="PhongPoint (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\PhongPoint.fx" nodename="PhongPoint (DX11.Effect)" componentmode="Hidden" id="250">
+   <BOUNDS type="Node" left="705" top="3675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Light DirectionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Geometry" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Geometry Out" dstnodeid="250" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="250" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="251">
+   <BOUNDS type="Node" left="45" top="3135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="NoCullSimple">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="251" srcpinname="Render State" dstnodeid="250" dstpinname="Render State">
+   </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="254">
+   <BOUNDS type="Node" left="2520" top="5865" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Actual BackBuffer SizeXY" dstnodeid="254" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="254" srcpinname="X" dstnodeid="87" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="254" srcpinname="Y" dstnodeid="87" dstpinname="Aspect Height">
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden" id="255">
+   <BOUNDS type="Node" left="1440" top="1245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" values="0.55">
+   </PIN>
+   <PIN pinname="TranslateZ" slicecount="1" values="-0.85">
+   </PIN>
+   <PIN pinname="Roll" slicecount="1" values="-0.02">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="255" srcpinname="Transform Out" dstnodeid="196" dstpinname="Instanced Transform">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="256">
+   <BOUNDS type="Node" left="1620" top="795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1.58">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0.27">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="256" srcpinname="Output" dstnodeid="255" dstpinname="TranslateX">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Layer Out" dstnodeid="1" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="257">
+   <BOUNDS type="Node" left="2445" top="4005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="257" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="258" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4485" top="4365" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4485" top="4365" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="258" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Initial Interest">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="259" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="270" top="1830" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="270" top="1830" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.57">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Animation Time|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="259" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Animation Time">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="260" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2805" top="2850" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2805" top="2850" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Has Skeleton|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Has Skeleton" dstnodeid="260" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="261">
+   <BOUNDS type="Node" left="255" top="1155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Period" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Phase" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="262">
+   <BOUNDS type="Node" left="1440" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="TextureFileName" dstnodeid="262" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="261" srcpinname="Output" dstnodeid="259" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="256" srcpinname="Output" dstnodeid="261" dstpinname="Phase">
+   </LINK>
+   <NODE systemname="Enum2String (Enumerations)" nodename="Enum2String (Enumerations)" componentmode="Hidden" id="264">
+   <BOUNDS type="Node" left="3825" top="1695" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enum" visible="1">
+   </PIN>
+   <PIN pinname="String Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="213" srcpinname="Output Enum" dstnodeid="264" dstpinname="Enum">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="271" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5955" top="255" width="8460" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5955" top="255" width="3810" height="2865">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Collada file was created in cinema4d, exported as fbx, loaded in 3dsmax2011 and exported as OpenCollada (available on kronos group as plugin for 3dsmax)&cr;&lf;https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools&cr;&lf;&cr;&lf;Instanced Skinning&cr;&lf;Module by Tekcor&cr;&lf;Credits microdee (David Morasz)&cr;&lf;for shader and initial work|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="9">
+   </PIN>
+   </NODE>
+   </PATCH>

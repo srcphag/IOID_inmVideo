@@ -1,0 +1,321 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="E:\_Proceso\miraDOME\VVVV_files\machines\instaParse.v4p" systemname="instaParse" filename="E:\_Proceso\miraDOME\VVVV_files\machines\instaParse.v4p" scrollx="0" scrolly="360">
+   <BOUNDS type="Window" left="15165" top="7980" width="9000" height="7875">
+   </BOUNDS>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="630" top="720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" slicecount="1" visible="1" values="url">
+   </PIN>
+   <PIN pinname="Intersperse String" slicecount="1" values="&quot;url&quot;:">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Keep Quotes" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="630" top="1155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse String" slicecount="1" visible="1" values="|, id|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Keep Quotes" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="None">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSpread (String Advanced)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetSpread (String Advanced)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="615" top="4755" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="4755" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="60" values="| https://scontent.cdninstagram.com/vp/0a40725479f6d1e1eb4c2a18652b2c7d/5CA0C040/t51.2885-15/e35/s150x150/49913182_1035836486624234_6308599303846409522_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/5b4ebb4ae8efc9fcdabfb79e3a7325ed/5CA120F8/t51.2885-15/e35/s320x320/49913182_1035836486624234_6308599303846409522_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/ffe2131c2aa6e494ade742ebe477a845/5CA13005/t51.2885-15/sh0.08/e35/s640x640/49913182_1035836486624234_6308599303846409522_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/0886ecd26496b97060f76454e862e844/5D48B624/t51.2885-15/e35/s150x150/47692314_293784684599950_2008584487591772007_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/45f3582022e8c17960c477d6c5a67e12/5D3C23D4/t51.2885-15/e35/s320x320/47692314_293784684599950_2008584487591772007_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/c2af83c3c3c2b4ac5bd1312fe7c97208/5D389A66/t51.2885-15/e35/47692314_293784684599950_2008584487591772007_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/c0c99c09889acc023102f82655ed5935/5D4C1487/t51.2885-15/e35/s150x150/44573543_1972195126193569_2976380022967751277_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/4fd966cffc87c6e06af97be23385183c/5D4610FF/t51.2885-15/e35/s320x320/44573543_1972195126193569_2976380022967751277_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/67b3ee9a274d1d80754b69eb1f710344/5D3F4E02/t51.2885-15/sh0.08/e35/s640x640/44573543_1972195126193569_2976380022967751277_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/f00118aedd96e0e585f15b42911dfc53/5CA0ABDA/t51.2885-15/e35/s150x150/32307836_697258377065147_3373436389960974336_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/e5d8163d99038a8eb9d0e65bf08fe700/5CA140EA/t51.2885-15/e35/s320x320/32307836_697258377065147_3373436389960974336_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/2b3a3801bfa72ff7f60df6d4772e1a29/5CA12A7D/t51.2885-15/sh0.08/e35/s640x640/32307836_697258377065147_3373436389960974336_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/297d1c04fe66f0aad670cd52a802a765/5CA0DA6F/t51.2885-15/e35/s150x150/31176843_742664229456785_1091258264001183744_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/c503a4c2d7ab6da98bfad5eaeee1c108/5CA0D1DF/t51.2885-15/e35/s320x320/31176843_742664229456785_1091258264001183744_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/1ad0b8dc5afbf77a286e8e9979283db5/5CA10E88/t51.2885-15/sh0.08/e35/s640x640/31176843_742664229456785_1091258264001183744_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/377079597bd5f0b921e21db358216219/5CA0BB2B/t51.2885-15/e35/s150x150/29093329_289468794919334_6960089520729489408_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/5bf47ba887013c3e77f5416325a7aec9/5CA0F31B/t51.2885-15/e35/s320x320/29093329_289468794919334_6960089520729489408_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/360fad9fd2814cf233d86491f3baae6d/5CA0B70C/t51.2885-15/sh0.08/e35/s640x640/29093329_289468794919334_6960089520729489408_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/c60d8c47a3e3ed09c3e6f78188027af6/5CA108BE/t51.2885-15/e35/s150x150/29089119_1034540593378919_8398088727989059584_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/5e2b14f89b6346ee3936fd3053cc59f3/5CA13106/t51.2885-15/e35/s320x320/29089119_1034540593378919_8398088727989059584_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/b3e09c1c3e48e220bf3074215b5e2e41/5CA125FB/t51.2885-15/sh0.08/e35/s640x640/29089119_1034540593378919_8398088727989059584_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/3461a4639e87709bfb6a3547998e8c10/5CA1245A/t51.2885-15/e35/s150x150/28434468_172945510010043_2008397291102142464_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/e5a412e0547240bfb36ca38e46e81963/5CA10C2A/t51.2885-15/e35/s320x320/28434468_172945510010043_2008397291102142464_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/f9ffc834fab3db047f6038409c5c44d7/5CA1213D/t51.2885-15/sh0.08/e35/s640x640/28434468_172945510010043_2008397291102142464_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/0d3dbcf20a5199a4f1d4b3c72efced71/5CA100AC/t51.2885-15/e35/s150x150/26298466_441700019578476_6081222380267503616_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/45d20d01d97c490e0883438412a812b9/5CA0DEDC/t51.2885-15/e35/s320x320/26298466_441700019578476_6081222380267503616_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/47c3a489c1d52e091449a72560c682f8/5CA0AD4B/t51.2885-15/sh0.08/e35/s640x640/26298466_441700019578476_6081222380267503616_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/424c54b7c4ff13e87068084d6e7a6c6e/5CA0C1C1/t51.2885-15/e35/s150x150/24174920_1955724501348421_3390275595223957504_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/488f7e84d3b35d56984d3884242c7ee3/5CA0C539/t51.2885-15/e35/s320x320/24174920_1955724501348421_3390275595223957504_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/2ae41e76fce1ae4467f62edd741c9135/5CA0C084/t51.2885-15/sh0.08/e35/s640x640/24174920_1955724501348421_3390275595223957504_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/a55233b3ea8f3d156e49696fe3c83ac7/5CA0F7C3/t51.2885-15/e35/s150x150/21434145_116429912351068_8935464208452026368_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/844bfcc23103185552e06566a955ca77/5CA11473/t51.2885-15/e35/s320x320/21434145_116429912351068_8935464208452026368_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/d91a33a9baf1c40a6ac42d5dade398be/5CA0E964/t51.2885-15/sh0.08/e35/s640x640/21434145_116429912351068_8935464208452026368_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/191fca52db1600748396dd8ab004a236/5CA14299/t51.2885-15/e15/s150x150/21294629_487010151664619_8914087318701211648_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/ed5ba6ab5f2d5eef80c798aecbc140de/5CA0D2A9/t51.2885-15/e15/s320x320/21294629_487010151664619_8914087318701211648_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/7df36997e822235bbdaed75a7bba0b93/5CA13FC6/t51.2885-15/e15/s640x640/21294629_487010151664619_8914087318701211648_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/cd5404b8f859e65637dd5b4c3a25c3b8/5D341FFB/t51.2885-15/e35/s150x150/21294959_319603468512263_3412591867336851456_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/cace8548db7a9b002310675596f278c4/5D33740B/t51.2885-15/e35/s320x320/21294959_319603468512263_3412591867336851456_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/73c27b98908940d72cdadc33bb612ad7/5D36DE5C/t51.2885-15/sh0.08/e35/s640x640/21294959_319603468512263_3412591867336851456_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/548da4918f47a8541559bb891aec2384/5CA13F97/t51.2885-15/e15/s150x150/20589571_347207989045046_6282933273056247808_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/c985b70804bbcd5ca93989cab6808a4c/5CA0D9A7/t51.2885-15/e15/s320x320/20589571_347207989045046_6282933273056247808_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/a16ead6c3c54e364e9a64a5824f5bd8e/5CA0E408/t51.2885-15/e15/s640x640/20589571_347207989045046_6282933273056247808_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/9ae2d731084ed229972fa62e237b0ffb/5D2D2072/t51.2885-15/e35/s150x150/20394419_1375900409132211_1328914987925635072_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/3a6bce2f86c851778e0c7dc2d5fcebef/5D3D400A/t51.2885-15/e35/s320x320/20394419_1375900409132211_1328914987925635072_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/09b078a6e062a2cf0d677f58fdb5ce31/5D3C22F7/t51.2885-15/sh0.08/e35/s640x640/20394419_1375900409132211_1328914987925635072_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/c3cc432fa7648d060441f6e493c63e47/5D4978E0/t51.2885-15/e35/s150x150/19761526_325571104535427_648265162314219520_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/e813518bf78852dbbb5e07731e7292a9/5D3B0BED/t51.2885-15/e35/s320x320/19761526_325571104535427_648265162314219520_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/95c6e17b79a49b135ab8d00e20858b08/5D321E01/t51.2885-15/sh0.08/e35/s640x640/19761526_325571104535427_648265162314219520_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/4da049e0c181888c0d6ed8b7c5130206/5D4DAB35/t51.2885-15/e35/s150x150/19624411_110859946213661_5888366443027759104_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/bc4dc7014ef3d2a40646ff881e4456cf/5D36CDC5/t51.2885-15/e35/s320x320/19624411_110859946213661_5888366443027759104_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/0208cc8d0d308f6fba68c345b3fec30a/5D2BC892/t51.2885-15/sh0.08/e35/s640x640/19624411_110859946213661_5888366443027759104_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/3c2502f7561e31b196df015651a79480/5CA14E19/t51.2885-15/e15/s150x150/19762000_231177654057892_691340918334160896_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/a06799ae55bf69e83d8100bffe2e8e7c/5CA12814/t51.2885-15/e15/s320x320/19762000_231177654057892_691340918334160896_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/f26583aa5a3a665c94deb7561c8ab8f6/5CA11639/t51.2885-15/e15/s640x640/19762000_231177654057892_691340918334160896_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/a64bcd4d8758199c2ac14576f7f1a677/5D46BEE9/t51.2885-15/e35/s150x150/19623523_272164416591916_5298004397710639104_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/63f80b8862602a0939f98460f377b207/5D46E919/t51.2885-15/e35/s320x320/19623523_272164416591916_5298004397710639104_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/bf39d6cceb9e303f299511e99ff8f35a/5D428F4E/t51.2885-15/sh0.08/e35/s640x640/19623523_272164416591916_5298004397710639104_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/1eb6ed67556907cd0f59be43bffcb1f0/5D4FDED4/t51.2885-15/e35/s150x150/19436487_1943738399203291_5839725620572979200_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/10ea63368e5a58bce29429afae825838/5D2990AC/t51.2885-15/e35/s320x320/19436487_1943738399203291_5839725620572979200_n.jpg?_nc_ht=scontent.cdninstagram.com|,| https://scontent.cdninstagram.com/vp/31e398d233fcf13ba002fe06260ac87a/5D342E51/t51.2885-15/sh0.08/e35/s640x640/19436487_1943738399203291_5839725620572979200_n.jpg?_nc_ht=scontent.cdninstagram.com|">
+   </PIN>
+   <PIN pinname="Count" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Offset" slicecount="1" visible="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="615" top="5190" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="5190" width="4995" height="585">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="out">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="11" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="630" top="1635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Intersperse String" slicecount="1" visible="1" values="}">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Keep Quotes" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="None">
+   </PIN>
+   </NODE>
+   <NODE id="9" nodename="Sift (String)" systemname="Sift (String)">
+   <BOUNDS height="0" left="1500" top="2355" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="7" values="0,1,1,0,1,1,1">
+   </PIN>
+   <PIN pinname="Filter" visible="1">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="Contains">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Found At Position" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="0" left="1620" top="1950" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5445" top="5805" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="285" left="1620" top="1950" type="Box" width="2625">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values=".jpg">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="fileType">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="9" dstpinname="Filter" srcnodeid="8" srcpinname="Output String">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (String)" filename="" nodename="GetSlice (String)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="630" top="2850" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="2850" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="316" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Input Index" dstnodeid="7" dstpinname="Index">
+   </LINK>
+   <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2805" top="3570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Scale" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3240" top="4440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Count" dstnodeid="6" dstpinname="Scale">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="12" dstpinname="Offset">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <NODE id="3" nodename="Sift (String)" systemname="Sift (String)">
+   <BOUNDS height="0" left="1530" top="3075" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="7" values="0,1,1,0,1,1,1">
+   </PIN>
+   <PIN pinname="Filter" visible="1" slicecount="1" values="id">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="Contains">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Found At Position" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE systemname="DeleteSlice (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="DeleteSlice (String)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="615" top="3450" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="3450" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Input Index" dstnodeid="2" dstpinname="Index">
+   </LINK>
+   <NODE id="1" nodename="Sift (String)" systemname="Sift (String)">
+   <BOUNDS height="0" left="1845" top="3705" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="7" values="0,1,1,0,1,1,1">
+   </PIN>
+   <PIN pinname="Filter" visible="1" slicecount="1" values="s640x640">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="Contains">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Found At Position" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" filename="" nodename="GetSlice (String)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="630" top="4230" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="4230" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" slicecount="1" visible="1" pintype="Input" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="630" top="300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="300" width="780" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="in">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="2820" top="1005" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2820" top="1005" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="rndImage">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Enabled">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="VVVV.Packs.Image-master" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <LINK srcnodeid="1" srcpinname="Input Index" dstnodeid="0" dstpinname="Index">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="3975" top="3750" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3975" top="3750" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|640 resolution|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Evaluate">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="1590" top="5940" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1590" top="5940" width="7065" height="585">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="outVid">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="5490" top="4440" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5490" top="4440" width="2910" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="outAll">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="22" dstpinname="Input String">
+   </LINK>
+   </PATCH>

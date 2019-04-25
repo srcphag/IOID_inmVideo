@@ -1,0 +1,63 @@
+
+StructuredBuffer<float4x4> iPreTr;
+StructuredBuffer<float4x4> tTex;
+cbuffer cbPerDraw : register( b0 )
+{
+
+	int transformCount = 1;
+	int tTexCount = 1;
+};
+
+
+
+
+
+
+struct vsin
+{
+	float4 pos : POSITION;
+	float3 norm : NORMAL;
+	float2 TexCd : TEXCOORD0;
+	uint iid : SV_InstanceID;
+};
+
+struct vs2gs
+{
+    float4 pos : POSITION;
+	float3 norm : NORMAL;
+	float2 TexCd : TEXCOORD0;
+	
+};
+
+struct gsOut
+{
+    float4 pos: SV_Position;
+    float3 norm : NORMAL;
+    float2 TexCd : TEXCOORD1;
+};
+
+vs2gs VS(vsin input)
+{
+	//Passtrough in that case, since we will process in gs
+	
+	//We don't need normals we will calculate them on the fly
+	vs2gs output;
+	output.pos = mul(float4(input.pos.xyz,1),iPreTr[input.iid % transformCount]);
+	output.norm = mul(float4(input.norm.xyz,1),iPreTr[input.iid % transformCount]).xyz;
+	//output.TexCd = mul(float4(input.pos.xyz,1),tTex).xy;
+	output.TexCd = mul(float4(input.TexCd,0,1),tTex[input.iid % tTexCount]);
+    return output;
+}
+
+
+
+GeometryShader StreamOutGS = ConstructGSWithSO( CompileShader( vs_4_0, VS() ), "POSITION.xyz; NORMAL.xyz; TEXCOORD.xy", NULL, NULL, NULL, -1);
+
+technique10 PassMesh
+{
+    pass PP2
+    {
+        SetVertexShader( CompileShader( vs_4_0, VS() ) );
+        SetGeometryShader( StreamOutGS );
+    }  
+}
